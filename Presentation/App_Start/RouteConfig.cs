@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace CleanArchitecture.Presentation
@@ -11,7 +10,7 @@ namespace CleanArchitecture.Presentation
             routes.LowercaseUrls = true;
 
             routes.MapMvcAttributeRoutes();
-            
+
             routes.RouteExistingFiles = true;
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Web.Mvc;
-using CleanArchitecture.Application.Sales.Commands.CreateSale;
+﻿using CleanArchitecture.Application.Sales.Commands.CreateSale;
 using CleanArchitecture.Application.Sales.Queries.GetSaleDetail;
 using CleanArchitecture.Application.Sales.Queries.GetSalesList;
 using CleanArchitecture.Presentation.Sales.Models;
 using CleanArchitecture.Presentation.Sales.Services;
+using System.Web.Mvc;
 
 namespace CleanArchitecture.Presentation.Sales
 {
@@ -57,7 +55,7 @@ namespace CleanArchitecture.Presentation.Sales
         [HttpPost]
         public RedirectToRouteResult Create(CreateSaleViewModel viewModel)
         {
-            var model = viewModel.Sale;            
+            var model = viewModel.Sale;
 
             _createCommand.Execute(model);
 

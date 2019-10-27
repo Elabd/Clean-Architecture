@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CleanArchitecture.Application.Interfaces;
+﻿using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Infrastructure.Network;
 
 namespace CleanArchitecture.Infrastructure.Inventory
 {
-    public class InventoryService 
+    public class InventoryService
         : IInventoryService
     {
         // Note: these are hard coded to keep the demo simple

@@ -1,11 +1,10 @@
-﻿using System;
+﻿using CleanArchitecture.Application.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using CleanArchitecture.Application.Interfaces;
 
 namespace CleanArchitecture.Application.Customers.Queries.GetCustomerList
 {
-    public class GetCustomersListQuery 
+    public class GetCustomersListQuery
         : IGetCustomersListQuery
     {
         private readonly IDatabaseService _database;
@@ -20,7 +19,7 @@ namespace CleanArchitecture.Application.Customers.Queries.GetCustomerList
             var customers = _database.Customers
                 .Select(p => new CustomerModel()
                 {
-                    Id = p.Id, 
+                    Id = p.Id,
                     Name = p.Name
                 });
 

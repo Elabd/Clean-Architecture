@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq;
-using CleanArchitecture.Application.Interfaces;
+﻿using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Sales.Commands.CreateSale.Factory;
 using CleanArchitecture.Common.Dates;
+using System.Linq;
 
 namespace CleanArchitecture.Application.Sales.Commands.CreateSale
 {
@@ -43,9 +42,9 @@ namespace CleanArchitecture.Application.Sales.Commands.CreateSale
 
             var sale = _factory.Create(
                 date,
-                customer, 
-                employee, 
-                product, 
+                customer,
+                employee,
+                product,
                 quantity);
 
             _database.Sales.Add(sale);

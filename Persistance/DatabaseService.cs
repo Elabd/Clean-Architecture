@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using CleanArchitecture.Application.Interfaces;
+﻿using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Domain.Customers;
 using CleanArchitecture.Domain.Employees;
 using CleanArchitecture.Domain.Products;
@@ -11,6 +7,7 @@ using CleanArchitecture.Persistance.Customers;
 using CleanArchitecture.Persistance.Employees;
 using CleanArchitecture.Persistance.Products;
 using CleanArchitecture.Persistance.Sales;
+using System.Data.Entity;
 
 
 namespace CleanArchitecture.Persistance
